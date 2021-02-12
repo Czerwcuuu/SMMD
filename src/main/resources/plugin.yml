@@ -1,0 +1,10 @@
+name: SMMegaDrop
+version: ${project.version}
+main: smmegadrop.smmegadrop.SMMegaDrop
+commands:
+  drop:
+    description: Pokazuje drop.
+    aliases: [kamien, stone]
+  turbodrop:
+    description: turbodrop.
+    aliases: [turbogracz, turboo]

@@ -1,0 +1,22 @@
+config:
+  drop:
+    diamond: 0.8
+    emerald: 2.9
+    iron: 3.9
+    coal: 3.0
+    gold: 1.4
+    redstone: 3.1
+    pearl: 0.1
+    obs: 2.0
+    slime: 1.4
+    books: 0.9
+    piasek: 0.7
+    apple: 0.9
+    tnt: 1.8
+    exp: 2
+    oexp: 4
+    addToDrop1: 1.5
+    addToDrop2: 1.8
+    addToDrop3: 2.0
+    linkbuy: 'stylowamc.pl'
+    turboaddToDrop: 10
