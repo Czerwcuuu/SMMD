@@ -12,7 +12,7 @@ public class JoinPlayerListener implements Listener {
         Player p = e.getPlayer();
         User u = User.get(p.getName());
         if (u == null) {
-            new User(p.getPlayer().getName(), true, true, true, true, true, true, true, true, true, true, true, true, true);
+            new User(p.getPlayer().getName(), true, true, true, true, true, true, true, true, true, true, true, true, true,true,true);
         }
 
     }

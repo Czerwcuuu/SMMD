@@ -22,8 +22,10 @@ public class User {
     private boolean enableBookShelf;
     private boolean enableApple;
     private boolean enableObs;
+    private boolean enableSand;
+    private boolean enableLapis;
 
-    public User(String name, boolean cobble, boolean ediamond, boolean eszmaragd, boolean egold, boolean eiron, boolean etnt, boolean eslime, boolean eredstone, boolean ebooks, boolean eapple, boolean eobs, boolean ecoal, boolean eperla) {
+    public User(String name, boolean cobble, boolean ediamond, boolean eszmaragd, boolean egold, boolean eiron, boolean etnt, boolean eslime, boolean eredstone, boolean ebooks, boolean eapple, boolean eobs, boolean ecoal, boolean eperla, boolean lapis, boolean sand) {
         this.name = name;
         this.enableDiamond = ediamond;
         this.enableSzmaragd = eszmaragd;
@@ -38,6 +40,8 @@ public class User {
         this.enableObs = eobs;
         this.enableApple = eapple;
         this.enableCobble = cobble;
+        this.enableSand = sand;
+        this.enableLapis = lapis;
         users.add(this);
         SMMegaDrop.getInst().users.add(this);
     }
@@ -148,6 +152,22 @@ public class User {
 
     public void eBooks(boolean ebooks) {
         this.enableBookShelf = ebooks;
+    }
+
+    public boolean eSand() {
+        return this.enableSand;
+    }
+
+    public void eSand(boolean sands) {
+        this.enableSand = sands;
+    }
+
+    public boolean eLapis() {
+        return this.enableLapis;
+    }
+
+    public void eLapis(boolean lapis) {
+        this.enableLapis = lapis;
     }
 
     public static User get(String user) {

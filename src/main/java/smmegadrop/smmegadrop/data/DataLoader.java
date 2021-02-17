@@ -36,7 +36,9 @@ public class DataLoader {
             boolean eapple = yml.getBoolean("eapple");
             boolean eobs = yml.getBoolean("eobs");
             boolean etnt = yml.getBoolean("etnt");
-            new User(name, cobble, ediamond, eszmaragd, eiron, ecoal, egold, epearl, eapple, eredstone, ebooks, eslime, eobs, etnt);
+            boolean esand = yml.getBoolean("esand");
+            boolean elapis = yml.getBoolean("elapis");
+            new User(name, cobble, ediamond, eszmaragd, eiron, ecoal, egold, epearl, eapple, eredstone, ebooks, eslime, eobs, etnt,esand,elapis);
         }
 
     }
@@ -70,6 +72,8 @@ public class DataLoader {
             yml.set("eapple", u.eApple());
             yml.set("ebooks", u.eBooks());
             yml.set("etnt", u.eTnt());
+            yml.set("esand", u.eSand());
+            yml.set("elapis", u.eLapis());
 
             try {
                 yml.save(f);

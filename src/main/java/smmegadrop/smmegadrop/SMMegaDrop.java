@@ -55,7 +55,7 @@ public class SMMegaDrop extends JavaPlugin {
             Player p = arrayOfPlayer.get(i);
             User u = User.get(p.getName());
             if (u == null) {
-                new User(p.getPlayer().getName(), true, true, true, true, true, true, true, true, true, true, true, true, true);
+                new User(p.getPlayer().getName(), true, true, true, true, true, true, true, true, true, true, true, true, true,true,true);
             }
         }
 

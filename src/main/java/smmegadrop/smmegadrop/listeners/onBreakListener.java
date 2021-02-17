@@ -102,7 +102,7 @@ public class onBreakListener implements Listener {
                                 recalculatePickaxe.recalculateDurability(e.getPlayer(), e.getPlayer().getItemInHand());
                                 e.getBlock().setType(Material.AIR);
                                 if (u.eGold()) {
-                                    is = new ItemStack(Material.GOLD_INGOT);
+                                    is = new ItemStack(Material.GOLD_BLOCK);
                                     is.setAmount(this.amount);
                                     not = p.getInventory().addItem(new ItemStack[]{is});
                                     if (!not.isEmpty()) {
@@ -130,7 +130,7 @@ public class onBreakListener implements Listener {
                                 recalculatePickaxe.recalculateDurability(e.getPlayer(), e.getPlayer().getItemInHand());
                                 e.getBlock().setType(Material.AIR);
                                 if (u.eIron()) {
-                                    is = new ItemStack(Material.IRON_INGOT);
+                                    is = new ItemStack(Material.IRON_BLOCK);
                                     is.setAmount(this.amount);
                                     not = p.getInventory().addItem(new ItemStack[]{is});
                                     if (!not.isEmpty()) {
@@ -144,7 +144,7 @@ public class onBreakListener implements Listener {
                                 recalculatePickaxe.recalculateDurability(e.getPlayer(), e.getPlayer().getItemInHand());
                                 e.getBlock().setType(Material.AIR);
                                 if (u.eEmerald()) {
-                                    is = new ItemStack(Material.EMERALD);
+                                    is = new ItemStack(Material.EMERALD_BLOCK);
                                     is.setAmount(this.amount);
                                     not = p.getInventory().addItem(new ItemStack[]{is});
                                     if (!not.isEmpty()) {
@@ -158,7 +158,7 @@ public class onBreakListener implements Listener {
                                 recalculatePickaxe.recalculateDurability(e.getPlayer(), e.getPlayer().getItemInHand());
                                 e.getBlock().setType(Material.AIR);
                                 if (u.eDiamond()) {
-                                    is = new ItemStack(Material.DIAMOND);
+                                    is = new ItemStack(Material.DIAMOND_BLOCK);
                                     is.setAmount(this.amount);
                                     not = p.getInventory().addItem(new ItemStack[]{is});
                                     if (!not.isEmpty()) {
@@ -214,7 +214,7 @@ public class onBreakListener implements Listener {
                                 recalculatePickaxe.recalculateDurability(e.getPlayer(), e.getPlayer().getItemInHand());
                                 e.getBlock().setType(Material.AIR);
                                 if (u.eBooks()) {
-                                    is = new ItemStack(Material.BOOKSHELF);
+                                    is = new ItemStack(Material.BOOK);
                                     is.setAmount(this.amount);
                                     not = p.getInventory().addItem(new ItemStack[]{is});
                                     if (!not.isEmpty()) {
@@ -229,6 +229,32 @@ public class onBreakListener implements Listener {
                                 e.getBlock().setType(Material.AIR);
                                 if (u.eTnt()) {
                                     is = new ItemStack(Material.TNT);
+                                    is.setAmount(this.amount);
+                                    not = p.getInventory().addItem(new ItemStack[]{is});
+                                    if (!not.isEmpty()) {
+                                        e.getBlock().getWorld().dropItemNaturally(e.getBlock().getLocation(), is);
+                                    }
+                                }
+                            }
+                            if (getChance.getChance(cfg.dropSand + cfg.smAddToDrop)) {
+                                e.getPlayer().getItemInHand().setDurability(e.getPlayer().getItemInHand().getDurability());
+                                recalculatePickaxe.recalculateDurability(e.getPlayer(), e.getPlayer().getItemInHand());
+                                e.getBlock().setType(Material.AIR);
+                                if (u.eTnt()) {
+                                    is = new ItemStack(Material.SAND);
+                                    is.setAmount(this.amount);
+                                    not = p.getInventory().addItem(new ItemStack[]{is});
+                                    if (!not.isEmpty()) {
+                                        e.getBlock().getWorld().dropItemNaturally(e.getBlock().getLocation(), is);
+                                    }
+                                }
+                            }
+                            if (getChance.getChance(cfg.dropSand + cfg.smAddToDrop)) {
+                                e.getPlayer().getItemInHand().setDurability(e.getPlayer().getItemInHand().getDurability());
+                                recalculatePickaxe.recalculateDurability(e.getPlayer(), e.getPlayer().getItemInHand());
+                                e.getBlock().setType(Material.AIR);
+                                if (u.eTnt()) {
+                                    is = new ItemStack(Material.INK_SACK, 1, (short) 4);
                                     is.setAmount(this.amount);
                                     not = p.getInventory().addItem(new ItemStack[]{is});
                                     if (!not.isEmpty()) {
@@ -271,7 +297,7 @@ public class onBreakListener implements Listener {
                                 recalculatePickaxe.recalculateDurability(e.getPlayer(), e.getPlayer().getItemInHand());
                                 e.getBlock().setType(Material.AIR);
                                 if (u.eGold()) {
-                                    is = new ItemStack(Material.GOLD_INGOT);
+                                    is = new ItemStack(Material.GOLD_BLOCK);
                                     is.setAmount(this.amount);
                                     not = p.getInventory().addItem(new ItemStack[]{is});
                                     if (!not.isEmpty()) {
@@ -299,7 +325,7 @@ public class onBreakListener implements Listener {
                                 recalculatePickaxe.recalculateDurability(e.getPlayer(), e.getPlayer().getItemInHand());
                                 e.getBlock().setType(Material.AIR);
                                 if (u.eIron()) {
-                                    is = new ItemStack(Material.IRON_INGOT);
+                                    is = new ItemStack(Material.IRON_BLOCK);
                                     is.setAmount(this.amount);
                                     not = p.getInventory().addItem(new ItemStack[]{is});
                                     if (!not.isEmpty()) {
@@ -313,7 +339,7 @@ public class onBreakListener implements Listener {
                                 recalculatePickaxe.recalculateDurability(e.getPlayer(), e.getPlayer().getItemInHand());
                                 e.getBlock().setType(Material.AIR);
                                 if (u.eEmerald()) {
-                                    is = new ItemStack(Material.EMERALD);
+                                    is = new ItemStack(Material.EMERALD_BLOCK);
                                     is.setAmount(this.amount);
                                     not = p.getInventory().addItem(new ItemStack[]{is});
                                     if (!not.isEmpty()) {
@@ -327,7 +353,7 @@ public class onBreakListener implements Listener {
                                 recalculatePickaxe.recalculateDurability(e.getPlayer(), e.getPlayer().getItemInHand());
                                 e.getBlock().setType(Material.AIR);
                                 if (u.eDiamond()) {
-                                    is = new ItemStack(Material.DIAMOND);
+                                    is = new ItemStack(Material.DIAMOND_BLOCK);
                                     is.setAmount(this.amount);
                                     not = p.getInventory().addItem(new ItemStack[]{is});
                                     if (!not.isEmpty()) {
@@ -349,6 +375,8 @@ public class onBreakListener implements Listener {
                                     }
                                 }
                             }
+
+
 
                             if (getChance.getChance(cfg.dropApple)) {
                                 e.getPlayer().getItemInHand().setDurability(e.getPlayer().getItemInHand().getDurability());
@@ -383,7 +411,7 @@ public class onBreakListener implements Listener {
                                 recalculatePickaxe.recalculateDurability(e.getPlayer(), e.getPlayer().getItemInHand());
                                 e.getBlock().setType(Material.AIR);
                                 if (u.eBooks()) {
-                                    is = new ItemStack(Material.BOOKSHELF);
+                                    is = new ItemStack(Material.BOOK);
                                     is.setAmount(this.amount);
                                     not = p.getInventory().addItem(new ItemStack[]{is});
                                     if (!not.isEmpty()) {
@@ -405,23 +433,37 @@ public class onBreakListener implements Listener {
                                     }
                                 }
                             }
+                            if (getChance.getChance(cfg.dropSand)) {
+                                e.getPlayer().getItemInHand().setDurability(e.getPlayer().getItemInHand().getDurability());
+                                recalculatePickaxe.recalculateDurability(e.getPlayer(), e.getPlayer().getItemInHand());
+                                e.getBlock().setType(Material.AIR);
+                                if (u.eTnt()) {
+                                    is = new ItemStack(Material.SAND);
+                                    is.setAmount(this.amount);
+                                    not = p.getInventory().addItem(new ItemStack[]{is});
+                                    if (!not.isEmpty()) {
+                                        e.getBlock().getWorld().dropItemNaturally(e.getBlock().getLocation(), is);
+                                    }
+                                }
+                            }
+                            if (getChance.getChance(cfg.dropLapis)) {
+                                e.getPlayer().getItemInHand().setDurability(e.getPlayer().getItemInHand().getDurability());
+                                recalculatePickaxe.recalculateDurability(e.getPlayer(), e.getPlayer().getItemInHand());
+                                e.getBlock().setType(Material.AIR);
+                                if (u.eTnt()) {
+                                    is = new ItemStack(Material.INK_SACK, 1, (short) 4);
+                                    is.setAmount(this.amount);
+                                    not = p.getInventory().addItem(new ItemStack[]{is});
+                                    if (!not.isEmpty()) {
+                                        e.getBlock().getWorld().dropItemNaturally(e.getBlock().getLocation(), is);
+                                    }
+                                }
+                            }
                         }
                     }
                 }
             } else if (e.getBlock().getType() == Material.OBSIDIAN) {
                 e.getPlayer().giveExp(Config.getInst().dropOEXP);
-            } else if (e.getBlock().getType() == Material.DIAMOND_ORE) {
-                e.getBlock().setType(Material.AIR);
-            } else if (e.getBlock().getType() == Material.IRON_ORE) {
-                e.getBlock().setType(Material.AIR);
-            } else if (e.getBlock().getType() == Material.GOLD_ORE) {
-                e.getBlock().setType(Material.AIR);
-            } else if (e.getBlock().getType() == Material.REDSTONE_ORE) {
-                e.getBlock().setType(Material.AIR);
-            } else if (e.getBlock().getType() == Material.COAL_ORE) {
-                e.getBlock().setType(Material.AIR);
-            } else if (e.getBlock().getType() == Material.EMERALD_ORE) {
-                e.getBlock().setType(Material.AIR);
             }
 
             p.updateInventory();

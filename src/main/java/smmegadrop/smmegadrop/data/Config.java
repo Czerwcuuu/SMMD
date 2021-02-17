@@ -23,6 +23,8 @@ public class Config {
     public double dropBooks;
     public double dropApple;
     public double dropTnT;
+    public double dropSand;
+    public double dropLapis;
     public int fortuneDrop1;
     public int fortuneDrop2;
     public int fortuneDrop3;
@@ -54,6 +56,8 @@ public class Config {
         this.dropBooks = this.cfg.getDouble("config.drop.books");
         this.dropApple = this.cfg.getDouble("config.drop.apple");
         this.dropTnT = this.cfg.getDouble("config.drop.tnt");
+        this.dropSand = this.cfg.getDouble("config.drop.sand");
+        this.dropLapis = this.cfg.getDouble("config.drop.lapis");
         this.dropEXP = this.cfg.getInt("config.drop.exp");
         this.dropOEXP = this.cfg.getInt("config.drop.oexp");
         this.fortuneDrop1 = this.cfg.getInt("config.drop.addToDrop1");

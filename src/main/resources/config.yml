@@ -1,20 +1,22 @@
 config:
   drop:
-    diamond: 0.8
-    emerald: 2.9
-    iron: 3.9
-    coal: 3.0
-    gold: 1.4
-    redstone: 3.1
-    pearl: 0.1
-    obs: 2.0
-    slime: 1.4
-    books: 0.9
+    diamond: 80.0
+    emerald: 60.0
+    iron: 80.0
+    coal: 15.0
+    gold: 70.0
+    redstone: 30.0
+    pearl: 1.2
+    obs: 60.0
+    slime: 40.0
+    books: 20.0
     piasek: 0.7
-    apple: 0.9
-    tnt: 1.8
+    apple: 2.0
+    tnt: 1.5
     exp: 2
     oexp: 4
+    sand: 60.0
+    lapis: 25.0
     addToDrop1: 1.5
     addToDrop2: 1.8
     addToDrop3: 2.0

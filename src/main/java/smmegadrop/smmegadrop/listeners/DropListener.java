@@ -37,6 +37,8 @@ public class DropListener implements Listener {
                     us.eRedstone(true);
                     us.eRedstone(false);
                     us.eApple(true);
+                    us.eLapis(true);
+                    us.eSand(true);
                     p.closeInventory();
                     GuiUtil.menudropu(p);
                     return;
@@ -58,6 +60,8 @@ public class DropListener implements Listener {
                     us.eRedstone(true);
                     us.eRedstone(false);
                     us.eApple(false);
+                    us.eLapis(true);
+                    us.eSand(true);
                     p.closeInventory();
                     GuiUtil.menudropu(p);
                     return;
@@ -82,7 +86,7 @@ public class DropListener implements Listener {
                     return;
                 }
 
-                if (e.getCurrentItem().getType() == Material.DIAMOND) {
+                if (e.getCurrentItem().getType() == Material.DIAMOND_BLOCK) {
                     e.setCancelled(true);
                     if (!us.eDiamond()) {
                         us.eDiamond(true);
@@ -97,7 +101,7 @@ public class DropListener implements Listener {
                     return;
                 }
 
-                if (e.getCurrentItem().getType() == Material.EMERALD) {
+                if (e.getCurrentItem().getType() == Material.EMERALD_BLOCK) {
                     e.setCancelled(true);
                     if (!us.eEmerald()) {
                         us.eEmerald(true);
@@ -112,7 +116,7 @@ public class DropListener implements Listener {
                     return;
                 }
 
-                if (e.getCurrentItem().getType() == Material.IRON_INGOT) {
+                if (e.getCurrentItem().getType() == Material.IRON_BLOCK) {
                     e.setCancelled(true);
                     if (!us.eIron()) {
                         us.eIron(true);
@@ -127,7 +131,7 @@ public class DropListener implements Listener {
                     return;
                 }
 
-                if (e.getCurrentItem().getType() == Material.GOLD_INGOT) {
+                if (e.getCurrentItem().getType() == Material.GOLD_BLOCK) {
                     e.setCancelled(true);
                     if (!us.eGold()) {
                         us.eGold(true);
@@ -255,6 +259,36 @@ public class DropListener implements Listener {
                         GuiUtil.menudropu(p);
                     } else {
                         us.ePerla(false);
+                        e.getWhoClicked().closeInventory();
+                        GuiUtil.menudropu(p);
+                    }
+
+                    return;
+                }
+
+                if (e.getCurrentItem().getType() == Material.SAND) {
+                    e.setCancelled(true);
+                    if (!us.eSand()) {
+                        us.eSand(true);
+                        e.getWhoClicked().closeInventory();
+                        GuiUtil.menudropu(p);
+                    } else {
+                        us.eSand(false);
+                        e.getWhoClicked().closeInventory();
+                        GuiUtil.menudropu(p);
+                    }
+
+                    return;
+                }
+
+                if (e.getCurrentItem().getType() == Material.INK_SACK && e.getCurrentItem().getDurability() == 4) {
+                    e.setCancelled(true);
+                    if (!us.eLapis()) {
+                        us.eLapis(true);
+                        e.getWhoClicked().closeInventory();
+                        GuiUtil.menudropu(p);
+                    } else {
+                        us.eLapis(false);
                         e.getWhoClicked().closeInventory();
                         GuiUtil.menudropu(p);
                     }

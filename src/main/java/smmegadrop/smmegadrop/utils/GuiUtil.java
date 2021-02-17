@@ -39,7 +39,7 @@ public class GuiUtil {
         offf.setDisplayName("§cWylacz wszystkie dropy");
         off.setItemMeta(offf);
         inv.setItem(28, off);
-        ItemStack disableDiamond = new ItemStack(Material.DIAMOND);
+        ItemStack disableDiamond = new ItemStack(Material.DIAMOND_BLOCK);
         ItemMeta disablediamond = is3.getItemMeta();
         ArrayList<String> lore = new ArrayList();
         lore.add("§4Nacisnij aby przelaczyc drop!");
@@ -50,7 +50,7 @@ public class GuiUtil {
         lore.add("§7Drop§8:§c§l wylaczony");
         disablediamond.setLore(lore);
         disableDiamond.setItemMeta(disablediamond);
-        ItemStack enableDiamond = new ItemStack(Material.DIAMOND);
+        ItemStack enableDiamond = new ItemStack(Material.DIAMOND_BLOCK);
         ItemMeta enablediamond = is3.getItemMeta();
         ArrayList<String> loree = new ArrayList();
         loree.add("§4Nacisnij aby przelaczyc drop!");
@@ -67,7 +67,7 @@ public class GuiUtil {
             inv.setItem(0, disableDiamond);
         }
 
-        ItemStack disableEmerald = new ItemStack(Material.EMERALD);
+        ItemStack disableEmerald = new ItemStack(Material.EMERALD_BLOCK);
         ItemMeta disableemerald = is3.getItemMeta();
         ArrayList<String> lore1 = new ArrayList();
         lore1.add("§4Nacisnij aby przelaczyc drop!");
@@ -78,7 +78,7 @@ public class GuiUtil {
         lore1.add("§7Drop§8:§c§l wylaczony");
         disableemerald.setLore(lore1);
         disableEmerald.setItemMeta(disableemerald);
-        ItemStack enableEmerald = new ItemStack(Material.EMERALD);
+        ItemStack enableEmerald = new ItemStack(Material.EMERALD_BLOCK);
         ItemMeta enableemerald = is3.getItemMeta();
         ArrayList<String> loreee = new ArrayList();
         loreee.add("§4Nacisnij aby przelaczyc drop!");
@@ -95,7 +95,7 @@ public class GuiUtil {
             inv.setItem(1, disableEmerald);
         }
 
-        ItemStack disableIron = new ItemStack(Material.IRON_INGOT);
+        ItemStack disableIron = new ItemStack(Material.IRON_BLOCK);
         ItemMeta disableiron = is3.getItemMeta();
         ArrayList<String> lore2 = new ArrayList();
         lore2.add("§4Nacisnij aby przelaczyc drop!");
@@ -106,7 +106,7 @@ public class GuiUtil {
         lore2.add("§7Drop§8:§c§l wylaczony");
         disableiron.setLore(lore2);
         disableIron.setItemMeta(disableiron);
-        ItemStack enableIron = new ItemStack(Material.IRON_INGOT);
+        ItemStack enableIron = new ItemStack(Material.IRON_BLOCK);
         ItemMeta enableiron = is3.getItemMeta();
         ArrayList<String> lore3 = new ArrayList();
         lore3.add("§4Nacisnij aby przelaczyc drop!");
@@ -123,7 +123,7 @@ public class GuiUtil {
             inv.setItem(3, disableIron);
         }
 
-        ItemStack disableGold = new ItemStack(Material.GOLD_INGOT);
+        ItemStack disableGold = new ItemStack(Material.GOLD_BLOCK);
         ItemMeta disablegold = is3.getItemMeta();
         ArrayList<String> zloto = new ArrayList();
         zloto.add("§4Nacisnij aby przelaczyc drop!");
@@ -134,7 +134,7 @@ public class GuiUtil {
         zloto.add("§7Drop§8:§c§l wylaczony");
         disablegold.setLore(zloto);
         disableGold.setItemMeta(disablegold);
-        ItemStack enableGold = new ItemStack(Material.GOLD_INGOT);
+        ItemStack enableGold = new ItemStack(Material.GOLD_BLOCK);
         ItemMeta enablegold = is3.getItemMeta();
         ArrayList<String> zloto1 = new ArrayList();
         zloto1.add("§4Nacisnij aby przelaczyc drop!");
@@ -291,7 +291,7 @@ public class GuiUtil {
             inv.setItem(11, disablePer);
         }
 
-        ItemStack disableBook = new ItemStack(Material.BOOKSHELF);
+        ItemStack disableBook = new ItemStack(Material.BOOK);
         ItemMeta disablebook = is3.getItemMeta();
         ArrayList<String> lore16 = new ArrayList();
         lore16.add("§4Nacisnij aby przelaczyc drop!");
@@ -302,7 +302,7 @@ public class GuiUtil {
         lore16.add("§7Drop§8:§c§l wylaczony");
         disablebook.setLore(lore16);
         disableBook.setItemMeta(disablebook);
-        ItemStack enableBook = new ItemStack(Material.BOOKSHELF);
+        ItemStack enableBook = new ItemStack(Material.BOOK);
         ItemMeta enablebook = is3.getItemMeta();
         ArrayList<String> lore17 = new ArrayList();
         lore17.add("§4Nacisnij aby przelaczyc drop!");
@@ -347,8 +347,8 @@ public class GuiUtil {
             inv.setItem(10, disableApple);
         }
 
-        ItemStack disableSand = new ItemStack(Material.SLIME_BALL);
-        ItemMeta disablesand = is3.getItemMeta();
+        ItemStack disableSlime = new ItemStack(Material.SLIME_BALL);
+        ItemMeta disableslime = is3.getItemMeta();
         ArrayList<String> lore20 = new ArrayList();
         lore20.add("§4Nacisnij aby przelaczyc drop!");
         lore20.add("§7Procent§8: §c" + cfg.dropSlimeBall + "%");
@@ -356,10 +356,10 @@ public class GuiUtil {
         lore20.add("§7Fortuna II: §a+§7" + cfg.fortuneDrop2);
         lore20.add("§7Fortuna III: §a+§7" + cfg.fortuneDrop3);
         lore20.add("§7Drop§8:§c§l wylaczony");
-        disablesand.setLore(lore20);
-        disableSand.setItemMeta(disablesand);
-        ItemStack enableSand = new ItemStack(Material.SLIME_BALL);
-        ItemMeta enablesand = is3.getItemMeta();
+        disableslime.setLore(lore20);
+        disableSlime.setItemMeta(disableslime);
+        ItemStack enableSlime = new ItemStack(Material.SLIME_BALL);
+        ItemMeta enableslime = is3.getItemMeta();
         ArrayList<String> lore21 = new ArrayList();
         lore21.add("§4Nacisnij aby przelaczyc drop!");
         lore21.add("§7Procent§8: §c" + cfg.dropSlimeBall + "%");
@@ -367,8 +367,64 @@ public class GuiUtil {
         lore21.add("§7Fortuna II: §a+§7" + cfg.fortuneDrop2);
         lore21.add("§7Fortuna III: §a+§7" + cfg.fortuneDrop3);
         lore21.add("§7Drop§8:§a§l wlaczony");
-        enablesand.setLore(lore21);
-        enableSand.setItemMeta(enablesand);
+        enableslime.setLore(lore21);
+        enableSlime.setItemMeta(enableslime);
+        if (u.eSlime()) {
+            inv.setItem(6, enableSlime);
+        } else {
+            inv.setItem(6, disableSlime);
+        }
+
+        ItemStack disableLapis = new ItemStack(Material.INK_SACK, 1, (short) 4);
+        ItemMeta disablelapis = is3.getItemMeta();
+        ArrayList<String> lore22 = new ArrayList();
+        lore22.add("§4Nacisnij aby przelaczyc drop!");
+        lore22.add("§7Procent§8: §c" + cfg.dropLapis + "%");
+        lore22.add("§7Fortuna I: §a+§7" + cfg.fortuneDrop1);
+        lore22.add("§7Fortuna II: §a+§7" + cfg.fortuneDrop2);
+        lore22.add("§7Fortuna III: §a+§7" + cfg.fortuneDrop3);
+        lore22.add("§7Drop§8:§c§l wylaczony");
+        disablelapis.setLore(lore22);
+        disableLapis.setItemMeta(disablelapis);
+        ItemStack enableLapis = new ItemStack(Material.INK_SACK, 1, (short) 4);
+        ItemMeta enablelapis = is3.getItemMeta();
+        ArrayList<String> lore23 = new ArrayList();
+        lore23.add("§4Nacisnij aby przelaczyc drop!");
+        lore23.add("§7Procent§8: §c" + cfg.dropLapis + "%");
+        lore23.add("§7Fortuna I: §a+§7" + cfg.fortuneDrop1);
+        lore23.add("§7Fortuna II: §a+§7" + cfg.fortuneDrop2);
+        lore23.add("§7Fortuna III: §a+§7" + cfg.fortuneDrop3);
+        lore23.add("§7Drop§8:§a§l wlaczony");
+        enablelapis.setLore(lore23);
+        enableLapis.setItemMeta(enablelapis);
+        if (u.eSlime()) {
+            inv.setItem(6, enableLapis);
+        } else {
+            inv.setItem(6, disableLapis);
+        }
+
+        ItemStack disableSand = new ItemStack(Material.SAND);
+        ItemMeta disablesand = is3.getItemMeta();
+        ArrayList<String> lore24 = new ArrayList();
+        lore24.add("§4Nacisnij aby przelaczyc drop!");
+        lore24.add("§7Procent§8: §c" + cfg.dropSand + "%");
+        lore24.add("§7Fortuna I: §a+§7" + cfg.fortuneDrop1);
+        lore24.add("§7Fortuna II: §a+§7" + cfg.fortuneDrop2);
+        lore24.add("§7Fortuna III: §a+§7" + cfg.fortuneDrop3);
+        lore24.add("§7Drop§8:§c§l wylaczony");
+        disablelapis.setLore(lore24);
+        disableLapis.setItemMeta(disablesand);
+        ItemStack enableSand = new ItemStack(Material.INK_SACK, 1, (short) 4);
+        ItemMeta enablesand = is3.getItemMeta();
+        ArrayList<String> lore25 = new ArrayList();
+        lore25.add("§4Nacisnij aby przelaczyc drop!");
+        lore25.add("§7Procent§8: §c" + cfg.dropSand + "%");
+        lore25.add("§7Fortuna I: §a+§7" + cfg.fortuneDrop1);
+        lore25.add("§7Fortuna II: §a+§7" + cfg.fortuneDrop2);
+        lore25.add("§7Fortuna III: §a+§7" + cfg.fortuneDrop3);
+        lore25.add("§7Drop§8:§a§l wlaczony");
+        enablelapis.setLore(lore25);
+        enableLapis.setItemMeta(enablesand);
         if (u.eSlime()) {
             inv.setItem(6, enableSand);
         } else {

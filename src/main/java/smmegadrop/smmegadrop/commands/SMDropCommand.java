@@ -57,6 +57,8 @@ public class SMDropCommand implements CommandExecutor {
                             cfg.dropApple += cfg.smAddToDrop;
                             cfg.dropSlimeBall += cfg.smAddToDrop;
                             cfg.dropBooks += cfg.smAddToDrop;
+                            cfg.dropSand += cfg.smAddToDrop;
+                            cfg.dropLapis += cfg.smAddToDrop;
                             Bukkit.broadcastMessage("§8» §d§lTurbo§b§lDrop§7 dla wszstkich graczy zostal Wlaczony.");
                             i = Integer.valueOf(args[2]);
                             taskID = Bukkit.getScheduler().scheduleAsyncRepeatingTask(SMMegaDrop.getInst(), new Runnable() {
